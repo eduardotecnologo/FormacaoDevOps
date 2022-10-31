@@ -9,4 +9,4 @@ spec:
       nodePort: 30001
       #targetPort: 80
   selector:
-    app: portal-noticias
+    app: sistema-noticias

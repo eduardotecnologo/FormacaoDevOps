@@ -29,8 +29,22 @@ IP:               10.1.0.6
 
 ** Editando o Pod
     FormacaoDevOps  on   eduDevOps 
-╰─ kubectl edit pod nginx-pod 
+╰─ kubectl edit pod nginx-pod
 
-** Aplicando o arquivo de definição
+**Aplicando o arquivo de definição
     FormacaoDevOps  on   eduDevOps 
 ╰─ kubectl apply -f primeiro-pod.yaml
+** Removendo um POD
+╭─    FormacaoDevOps/kubernetes  on   eduDevOps 
+╰─ kubectl delete -f primeiro-pod.yaml                                                      ─╯
+pod "primeiro-pod-declarativo" deleted
+
+** Executando o Pod
+╭─    FormacaoDevOps/PortalNoticias  on   eduDevOps !2 ?1 
+╰─ kubectl exec -it portal-noticias -- bash
+
+**Delete Pods
+FormacaoDevOps/PortalNoticias  on   eduDevOps !1 ?5 
+╰─ kubectl delete pod --
+
+** Setup Services
