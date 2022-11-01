@@ -13,5 +13,3 @@ spec:
     envFrom:
       - configMapRef:
           name: portal-configmap
-
-         
